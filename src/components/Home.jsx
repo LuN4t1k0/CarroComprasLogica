@@ -5,9 +5,10 @@ const Home = () => {
   const { data, addToCart, removeItem, deleteItem,count, total ,emptyCart } = useContext(AppContext);
   return (
     <div>
-      <h1>Home</h1>
-      <h1>{count}</h1>
-      <h1>{total}</h1>
+      <h3>Ejemplo de la logica de un carro de compra </h3>
+      <h1>Carro</h1>
+      <h2>Articulos en el carro : {count}</h2>
+      <h2>Precio total :{total}</h2>
       <button onClick={emptyCart}>vaciar Carro</button>
       {data.map(item => (
         <>
